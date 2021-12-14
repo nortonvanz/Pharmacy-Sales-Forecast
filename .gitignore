@@ -1,0 +1,8 @@
+# Extensions
+*.csv
+*.gdoc
+*.gsheet
+
+
+# Distribuition / packaging
+*.ipynb_checkpoints
