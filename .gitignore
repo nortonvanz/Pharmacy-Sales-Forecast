@@ -2,7 +2,7 @@
 *.csv
 *.gdoc
 *.gsheet
-
+*.DS_Store
 
 # Distribuition / packaging
 *.ipynb_checkpoints
