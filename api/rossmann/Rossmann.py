@@ -10,7 +10,7 @@ class Rossmann ( object ):
     def __init__ ( self ):
         #toda vez que instanciar esta classe, guarda na memória todas as transformações dos arquivos pickle
         #self - variáveis dentro da classe Rossmann só poderão ser acessadas internamente
-        self.home_path='/Users/home/Documents/pharmacy_sales_forecast_files/'
+        self.home_path='/Users/home/repos/pharmacy_sales_forecast/'
         self.competition_distance_scaler     = pickle.load (open (self.home_path + 'parameter/competition_distance_scaler.pkl', 'rb') )
         self.competition_time_month_scaler   = pickle.load (open (self.home_path + 'parameter/competition_time_month_scaler.pkl', 'rb') )
         self.promo2_time_week_scaler         = pickle.load (open (self.home_path + 'parameter/promo2_time_week_scaler.pkl', 'rb') )
@@ -82,7 +82,7 @@ class Rossmann ( object ):
         #day
         df2['day'] = df2['date'].dt.day
         #week_of_year
-        df2['week_of_year'] = df2['date'].dt.weekofyear
+        df2['week_of_year'] = df2['date'].dt.isocalendar().week
         #year_week
         df2['year_week'] = df2['date'].dt.strftime( '%Y-%W' )
         #competition_since

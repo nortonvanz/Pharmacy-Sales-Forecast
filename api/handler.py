@@ -5,7 +5,7 @@ from rossmann.Rossmann import Rossmann
 from flask             import Flask, request, Response
 
 #carregar modelo em memória
-model = pickle.load( open ('/Users/home/Documents/pharmacy_sales_forecast_files/model/model_rossmann.pkl', 'rb' ) )
+model = pickle.load( open ('/Users/home/repos/pharmacy_sales_forecast/model/model_rossmann.pkl', 'rb' ) )
              
 app = Flask (__name__)
 
@@ -47,3 +47,4 @@ def rossmann_predict():
 if __name__ == '__main__':  
     #rodar no localhost
     app.run ( '0.0.0.0' )
+
