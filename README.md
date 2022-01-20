@@ -88,36 +88,43 @@ Minha estratégia para resolver esse desafio, baseado na metodologia CRISP-DS, �
 ## 4. Os 3 principais insights dos dados
 
 Durante a análise exploratória de dados, foram gerados insights ao time de negócio. 
+
 Insights são informações novas, ou que contrapõe crenças até então estabelecidas do time de negócios. São também acionáveis: possibilitam ação para direcionar resultados futuros.
 
 #### 1 Lojas com promoções ativas por mais tempo vendem menos!
-* Insight de negócio: Descontinuar de promoções ativas por tempo estendido, visto que constatou-se queda nas vendas após o período promocional normal.
+* Insight de negócio: Descontinuar as promoções ativas por tempo estendido, visto que constatou-se queda nas vendas após o período promocional normal.
 
 #### 2 Lojas vendem menos durante os feriados escolares, exceto nos meses de agosto!
 * Insight de negócio: Considerar esta particularidade do mês de agosto na elaboração de promoções envolvendo clientes em faixas etárias escolares.
 
-#### 3 Lojas vendem menos no segundo semestre do ano.
+#### 3 Lojas vendem menos no segundo semestre do ano!
 * Insight de negócio: Considerar o declínio sazonal histórico de vendas entre os meses de agosto a novembro, compensando este fenômeno como ações de marketing.  
 
 
 ## 5. Resultados financeiros para o negócio
-As previsões de vendas da Rossmann eram até antes deste projeto, eram realizadas por meio de histórico de vendas em planilhas, através de uma média móvel.
-A taxa de erros média das lojas era de 36%, chegando a 70% em algumas lojas mais recentes.
-Após a implementação deste modelo de previsão de vendas, a taxa de erro média das lojas passou a ser de 9,65%.
-Por meio da melhoria na gestão financeira da empresa, agora de posse de uma previsão de vendas mais assertiva, foi constatado um aumento de 1.9% no seu lucro líquido semestral após a implementação do modelo. Em números, isto representa aproximadamente R$1.140.000,00 a cada semestre.  
+As previsões de vendas da Rossmann, eram até antes deste projeto realizadas por meio de planilhas de histórico de venda, através de uma média móvel.
+A taxa de erros da previsão de vendas de toda a rede ficava na média de 36%, chegando a até 60% nas lojas mais recentes.
+
+Após a implementação deste modelo de previsão de vendas, a taxa de erro média das previsões em toda a rede passou para 9,65% em média.
+
+Essa redução do erro de mais de 26% em média na previsão de vendas da rede, se traduziu na melhoria na gestão financeira da empresa. 
+
+Em função disso, foi constatado após o primeiro semestre da implementação do modelo na Rossmann, um aumento de 1.9% no seu lucro líquido semestral. 
+
+Em números, isto representa aproximadamente €114.140.000 (± R$700 milhões) líquidos a cada semestre, considerando o faturamento de 2020 de 10 bilhões de euros/ano. 
 
 
 ## 6. Conclusão
-O objetivo do projeto foi alcançado, resolvendo o problema inicial de previsibilidade de faturamento do CFO, bem como aumentando o lucro líquido da empresa dentro do esperado.
+O objetivo do projeto foi alcançado, resolvendo não só o problema inicial de previsibilidade de faturamento do CFO, bem como melhorando a gestão financeira da Rossmann como um todo, trazendo consigo ganhos financeiros consideráveis para o negócio.
 
 O funcionamento da previsão de vendas via bot do Telegram pode ser visto aqui: [Youtube](https://www.youtube.com/shorts/XsvRzYXMBL4)
 
 ## 7. Próximos passos
 Melhorias mapeadas:
-* Reavaliação do conjunto de parâmetros utilizados para maximizar o aprendizado do modelo, incluindo mais parâmetros no Random Search, e avaliando a viabilidade de uso de Bayesian Search.
+* Reavaliação do conjunto de parâmetros utilizados para maximizar o aprendizado do modelo, incluindo mais parâmetros na estratégia Random Search, e avaliando a viabilidade de uso da estratégia Bayesian Search.
 * Possibilidade de incluir além da previsão de vendas da loja atual, a previsão mais pessimista e a mais otimista. Exemplo: previsão para 6 semanas: R$ 200.000,00. Pessimista: R$ 186.000,00 (-7%). Otimista: R$ 214.000,00 (+7%).
 
 ## 8 Referências
 * Este Projeto de Previsão de vendas é parte do curso "DS em Produção", da [Comunidade DS](https://www.comunidadedatascience.com/comunidade-ds/)
 * O Dataset foi obtido no [Kaggle](https://www.kaggle.com/c/rossmann-store-sales)
-* A imagem utilizada é de uso livre e foi obtida no [Pexels](https://www.pexels.com/)
+* A imagem utilizada é de uso livre e foi obtida no [Pexels](https://www.pexels.com/pt-br/foto/mulher-adulta-elegante-usando-smartphone-na-rua-3774903/)
