@@ -7,7 +7,8 @@ Projeto de Previsão de Vendas de uma rede de farmácias.
 
 Contextualização:
 A Rossmann é uma das maiores redes de farmácias da Europa, possuindo mais de 4.000 lojas, e 56 mil colaboradores até 2020.
-Os dados utilizados no projeto são reais, e foram disponibilizados pela empresa através do site Kaggle, para uma competição de ciência de dados.
+
+Os dados utilizados neste projeto são reais, e foram disponibilizados pela própria Rossmanm através do site Kaggle, para uma competição de ciência de dados.
 Foram disponibilizados 1.017.209 registros de vendas, contendo 18 colunas detalhando cada venda.
 O contexto de negócios é fictício, porém descreve um problema real de uma grande varejista: prever com assertividade suas vendas.
 
@@ -106,7 +107,7 @@ Por meio da melhoria na gestão financeira da empresa, agora de posse de uma pre
 ## 6. Conclusão
 O objetivo do projeto foi alcançado, resolvendo o problema inicial de previsibilidade de faturamento do CFO, bem como aumentando o lucro líquido da empresa dentro do esperado.
 
-O funcionamento da previsão de vendas via bot do Telegram pode ser visto aqui: [Youtube] (https://www.youtube.com/shorts/XsvRzYXMBL4)
+O funcionamento da previsão de vendas via bot do Telegram pode ser visto aqui: [Youtube](https://www.youtube.com/shorts/XsvRzYXMBL4)
 
 ## 7. Próximos passos
 Melhorias mapeadas:
