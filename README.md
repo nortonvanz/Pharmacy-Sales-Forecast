@@ -15,7 +15,7 @@ O contexto de negócios é fictício, porém descreve um problema real de uma gr
 
 ## 1. Problema de negócios
 ### 1.1 Problema
-Em uma reunião mensal de resultados da Rossmann, o CFO solicitou aos gerentes das lojas a previsão de vendas (faturamento) para as próximas 6 semanas, pois ele precisa saber quanto cada loja pode contribuir financeiramente para uma reforma na rede, que está padronizando as lojas.
+Em uma reunião mensal de resultados da Rossmann, o CFO solicitou aos gerentes das lojas a previsão de vendas (faturamento) para as próximas 6 semanas, pois ele precisa saber quanto cada loja pode contribuir financeiramente para uma reforma na rede, que está padronizando suas lojas.
 
 ### 1.2 Objetivo
 Propiciar a melhoria na gestão financeira da empresa, através de maior assertividade na previsão de suas vendas, obtendo como resultado um aumento no seu lucro líquido semestral entre 1 e 2%.
