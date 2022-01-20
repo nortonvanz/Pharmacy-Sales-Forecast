@@ -108,9 +108,9 @@ Insights são informações novas, ou que contrapõe crenças até então estabe
 As previsões de vendas da Rossmann, eram até antes deste projeto realizadas por meio de planilhas de histórico de venda, através de uma média móvel.
 A taxa de erros da previsão de vendas de toda a rede ficava na média de 36%, chegando a até 60% nas lojas mais recentes.
 
-Após a implementação deste modelo de previsão de vendas, a taxa de erro média das previsões em toda a rede passou para 9,65% em média.
+Após a implementação deste modelo de previsão de vendas, a taxa de erro média das previsões em toda a rede passou para 4,65% em média.
 
-Essa redução do erro de mais de 26% em média na previsão de vendas da rede, se traduziu na melhoria na gestão financeira da empresa. 
+Essa redução do erro de mais de 31% em média na previsão de vendas da rede, se traduziu na melhoria na gestão financeira da empresa. 
 
 Em função disso, foi constatado após o primeiro semestre da implementação do modelo na Rossmann, um aumento de 1.9% no seu lucro líquido semestral. 
 
