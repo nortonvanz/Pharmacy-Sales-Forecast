@@ -9,21 +9,21 @@ Contextualização:
 A Rossmann é uma das maiores redes de farmácias da Europa, possuindo mais de 4.000 lojas, e 56 mil colaboradores até 2020.
 
 Os dados utilizados neste projeto são reais, e foram disponibilizados pela própria Rossmanm através do site Kaggle, para uma competição de ciência de dados.
-Foram disponibilizados 1.017.209 registros de vendas, contendo 18 colunas detalhando cada venda.
+Foram disponibilizados 1.017.209 registros de vendas, contendo 18 características de cada venda.
+
 O contexto de negócios é fictício, porém descreve um problema real de uma grande varejista: prever com assertividade suas vendas.
 
 ## 1. Problema de negócios
 ### 1.1 Problema
-A previsão de vendas de todas as lojas foi requisitada pelo CFO aos gerentes das lojas, em uma reunião mensal de resultados.
-O CFO precisa da previsão de vendas (faturamento) das próximas 6 semanas, pra saber quanto cada loja pode contribuir financeiramente para uma grande reforma (padronização da rede).
+Em uma reunião mensal de resultados da Rossmann, o CFO solicitou aos gerentes das lojas a previsão de vendas (faturamento) para as próximas 6 semanas, pois ele precisa saber quanto cada loja pode contribuir financeiramente para uma reforma na rede, que está padronizando as lojas.
 
 ### 1.2 Objetivo
-Propiciar a melhoria na gestão financeira da empresa, através de maior assertividade na previsão de suas vendas, tendo como resultado um aumento no seu lucro líquido semestral entre 1 e 2%.
+Propiciar a melhoria na gestão financeira da empresa, através de maior assertividade na previsão de suas vendas, obtendo como resultado um aumento no seu lucro líquido semestral entre 1 e 2%.
 
 
 ## 2. Premissas de negócio
-- A consulta da previsão de vendas deve estar disponível 24/7, e deve ser acessível via dispositivos móveis.
-- O planejamento da solução será validado com os gerentes, visando garantir que as decisões tomadas na construção da solução são as melhores considerando o conhecimento de negócios já disponível.
+- A consulta da previsão de vendas estará disponível 24/7, e será acessível via dispositivos móveis.
+- O planejamento da solução será validado com os gerentes, visando garantir que o seu conhecimento de negócios seja aproveitado ao máximo.
 
 As variáveis do dataset original são:
 
