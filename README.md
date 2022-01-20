@@ -51,10 +51,10 @@ Variável | Definição
 As variáveis derivadas no Feature Selection são:
 Variável | Definição
 ------------ | -------------
-|competition_since | data onde a partir dela, existem competidores. |
+|competition_since | data desde que existem competidores. |
 |competition_time_month | número de meses desde que a competição iniciou. |
-|promo2_since | data desde quando a Promo2 está ativa. |
-|promo2_time_week | números de semanas em que a Promo2 ficou ativa |
+|promo2_since | data desde que a Promo2 está ativa. |
+|promo2_time_week | números de semanas em que a Promo2 ficou ativa. |
 
 
 ## 3. Planejamento da solução
@@ -75,17 +75,19 @@ Quais ferramentas serão usadas no processo?
 Minha estratégia para resolver esse desafio, baseado na metodologia CRISP-DS, é:
 1. Compreender com clareza o modelo e o problema de negócios, através da estatística descritiva;
 2. Tratar os dados (formatos, dados faltantes, outliers), realizando a sua limpeza.
-3. Levantar hipóteses junto ao time de negócio das variáveis que impactam nas vendas, validar as hipóteses, gerando insights de negócios, e percebendo quais delas são insumos relevantes para o algoritmo.
+3. Levantar junto ao time de negócio as variáveis que impactam nas vendas, formular e validar hipóteses gerando insights de negócio, e perceber quais variáveis são insumos relevantes para o algoritmo de previsão de vendas.
 4. Preparar os dados para a criação do modelo de previsão de vendas, realizando transformações, separação do dataframe entre treino e teste, e seleção de features através de algoritmo com esta finalidade.   
 5. Treinar 5 algoritmos de aprendizado de máquina (lineares e não lineares), comparar sua performance, e selecionar o que melhor desempenha.
 6. Encontrar o conjunto de parâmetros que maximiza o aprendizado do modelo selecionado, reduzindo o seu erro nas previsões.
 7. Interpretar o erro do modelo e traduzir em resultado financeiro para a empresa.
-8. Avaliar se a publicação da previsão de vendas já entrega valor, a publicando em produção, ou realizando um novo ciclo de melhorias pontuais.
-9. Publicada a previsão na internet, criar robô no Telegram que acesse a previsão em tempo real, de qualquer lugar.
-10. Apresentar e disponibilizar o bot do Telegram aos gerentes, detalhando o funcionamento do modelo e esclarecendo as suas dúvidas.
+8. Avaliar se a previsão de vendas construída já entrega valor ao time de negócios, publicando em produção em caso positivo, ou realizando um novo ciclo de melhorias pontuais em caso negativo.
+9. Após a publicação, criar robô no Telegram que acesse a previsão em tempo real, de qualquer lugar.
+10. Apresentar e disponibilizar o bot do Telegram aos gerentes e CFO, detalhando o funcionamento do modelo e esclarecendo as suas dúvidas.
 
 
 ## 4. Os 3 principais insights dos dados
+
+Durante a análise exploratória de dados, foram gerados insights ao time de negócio. Insights são informações novas, ou que contrapõe crenças do time de negócios. São também acionáveis: possibilitam ação para direcionar resultados futuros.
 
 #### 1 Lojas com promoções ativas por mais tempo vendem menos!
 * Insight de negócio: Descontinuar de promoções ativas por tempo estendido, visto que constatou-se queda nas vendas após o período promocional normal.
