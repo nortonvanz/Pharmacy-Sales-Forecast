@@ -87,7 +87,8 @@ Minha estratégia para resolver esse desafio, baseado na metodologia CRISP-DS, �
 
 ## 4. Os 3 principais insights dos dados
 
-Durante a análise exploratória de dados, foram gerados insights ao time de negócio. Insights são informações novas, ou que contrapõe crenças do time de negócios. São também acionáveis: possibilitam ação para direcionar resultados futuros.
+Durante a análise exploratória de dados, foram gerados insights ao time de negócio. 
+Insights são informações novas, ou que contrapõe crenças até então estabelecidas do time de negócios. São também acionáveis: possibilitam ação para direcionar resultados futuros.
 
 #### 1 Lojas com promoções ativas por mais tempo vendem menos!
 * Insight de negócio: Descontinuar de promoções ativas por tempo estendido, visto que constatou-se queda nas vendas após o período promocional normal.
