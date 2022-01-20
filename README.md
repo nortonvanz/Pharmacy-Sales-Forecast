@@ -67,8 +67,11 @@ Quais ferramentas serão usadas no processo?
 - Python 3.8.12;
 - Jupyter Notebook;
 - Git e Github;
-- Heroku Cloud;
-- Algoritmo de aprendizado de máquina Gxboost.  
+- Heroku Cloud; 
+- Algoritmos de Classificação e Regressão;
+- Pacotes de Machine Learning Sklearn e Scipy;
+- Técnicas de Seleção de Atributos e Redução de Dimensionalidade
+- Flask e Python API's
 
 ### 3.3 Processo
 #### 3.3.1 Estratégia de solução
