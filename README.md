@@ -45,7 +45,7 @@ Variável | Definição
 |promo | indica se a loja está com uma promoção ativa naquele dia.|
 |promo2 | é uma promoção contínua e consecutiva: (0 = store not participating, 1 = store participating).|
 |promo2_since_week | indica a semana do calendário onde a loja entrou em Promo2.|
-|promo2_since_year' , 'indica o ano onde a loja entrou em Promo2.|
+|promo2_since_year | indica o ano onde a loja entrou em Promo2.|
 |promo_interval | indica os meses de início anual onde Promo2 é iniciada (ex: "Feb,May,Aug,Nov").|
 
 As variáveis derivadas no Feature Selection são:
