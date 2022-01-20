@@ -60,7 +60,7 @@ Variável | Definição
 ## 3. Planejamento da solução
 ### 3.1. Produto final
 O que será entregue efetivamente?
-- Um bot (robô) no aplicativo de mensagens Telegram, que recebe o número da loja, e retorna em tempo real qual a sua previsão de vendas (faturamento) para as próximas 6 semanas.
+- Um bot (robô) no aplicativo de mensagens Telegram, que recebe o código da loja, e retorna em tempo real qual a sua previsão de vendas (faturamento) para as próximas 6 semanas.
 
 ### 3.2. Ferramentas
 Quais ferramentas serão usadas no processo?
