@@ -121,8 +121,8 @@ O funcionamento da previsão de vendas via bot do Telegram pode ser visto aqui: 
 
 ## 7. Próximos passos
 Melhorias mapeadas:
-* Reavaliação do conjunto de parâmetros utilizados para maximizar o aprendizado do modelo, incluindo mais parâmetros na estratégia Random Search, e avaliando a viabilidade de uso da estratégia Bayesian Search.
-* Possibilidade de incluir além da previsão de vendas da loja atual, a previsão mais pessimista e a mais otimista. Exemplo: previsão para 6 semanas: R$ 200.000,00. Pessimista: R$ 186.000,00 (-7%). Otimista: R$ 214.000,00 (+7%).
+* Reavaliar o conjunto de parâmetros utilizados para maximizar o aprendizado do modelo, incluindo mais parâmetros na estratégia Random Search, e avaliando a viabilidade de uso da estratégia Bayesian Search.
+* Incluir além da previsão de vendas da loja atual no bot do Telegram, a previsão mais pessimista e a mais otimista. Exemplo: previsão para 6 semanas: R$ 200.000,00. Pessimista: R$ 186.000,00 (-7%). Otimista: R$ 214.000,00 (+7%).
 
 ## 8 Referências
 * Este Projeto de Previsão de vendas é parte do curso "DS em Produção", da [Comunidade DS](https://www.comunidadedatascience.com/comunidade-ds/)
