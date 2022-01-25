@@ -3,6 +3,7 @@
 *.gdoc
 *.gsheet
 *.DS_Store
+*.mov
 
 # Distribuition / packaging
 *.ipynb_checkpoints
