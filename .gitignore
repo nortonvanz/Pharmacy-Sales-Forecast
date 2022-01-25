@@ -7,3 +7,6 @@
 
 # Distribuition / packaging
 *.ipynb_checkpoints
+
+# Files
+rossmann_telegram_api/rossmann_bot.py
