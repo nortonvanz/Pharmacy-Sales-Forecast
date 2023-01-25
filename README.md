@@ -59,34 +59,34 @@ A análise detalhada dos dados foi realizada através da ferramenta SweetViz, e 
 
 Os 3 principais insights gerados foram:
 
-#### 1 Lojas com promoções ativas por mais tempo deveriam vender mais.
+#### H4 - Lojas com promoções ativas por mais tempo deveriam vender mais.
 Hipótese falsa. Foi observado que as vendas cairam em toda a rede em promoções extendidas ativas há mais de 220 semanas.
 
 <img src="https://github.com/nortonvanz/Pharmacy-Sales-Forecast/blob/main/img/hyp_4.png?raw=true" alt="h4" title="Vendas x Semanas com promo estendida" align="center" height="380" class="center"/>
 
 * Insight de negócio: Descontinuar as promoções extendidas ativas ao atingirem no máximo 220 semanas, mantendo apenas promoções pontuais, ou realizando novas campanhas promocionais.
 
-#### 2 Lojas deveriam vender mais no segundo semestre do ano.
+#### H9 - Lojas deveriam vender mais no segundo semestre do ano.
 Hipótese falsa. Foi observado que com exceção do mês de julho, as vendas são aproximadamente 1/3 menores nos 5 últimos meses do ano. 
 
 <img src="https://github.com/nortonvanz/Pharmacy-Sales-Forecast/blob/main/img/hyp_9.png?raw=true" alt="h9" title="Vendas x Meses do Ano" align="center" height="380" class="center"/>
 
 * Insight de negócio: Considerar o declínio sazonal histórico de vendas entre os meses de agosto a dezembro, compensando este fenômeno como ações de marketing adicionais.  
 
-#### 3 Lojas deveriam vender menos durante os feriados escolares.
+#### H12 - Lojas deveriam vender menos durante os feriados escolares.
 Hipótese verdadeira. Na média anual, as lojas vendem menos em feriados escolares. Avaliando mensalmente, a exceção é o mês de agosto.
 
 <img src="https://github.com/nortonvanz/Pharmacy-Sales-Forecast/blob/main/img/hyp_12.png?raw=true" alt="h12" title="Vendas x Meses do Ano em Feriados" align="center" height="380" class="center"/>
 
-* Insight de negócio: Considerar um maior aproveitamento deste aumento de vendas nos feriados escolares de agosto, elaborando promoções focadas em clientes nas faixas etárias escolares.
+* Insight de negócio: Considerar um maior aproveitamento deste aumento de vendas nos feriados escolares de julho e agosto, elaborando promoções focadas em clientes nas faixas etárias escolares.
 
 ## 5. Resultados do modelo de previsão de vendas
 
-O algoritmo escolhido para produção foi o XGBoost Regressor, tendo um erro absoluto médio (MAE) de €690 após o cross-validation.
+O algoritmo escolhido para produção foi o XGBoost Regressor, tendo um erro absoluto médio (MAE) de €686 após o cross-validation.
 
 Desta forma, a cada predição para 6 semanas, o modelo erra em torno de €686 por dia (± 10%).
 
-Uma comparação entre vendas reais e vendas previsar pode ser vista abaixo:
+Uma comparação entre vendas reais e vendas previstas pode ser vista abaixo:
 
 <img src="https://github.com/nortonvanz/Pharmacy-Sales-Forecast/blob/main/img/ml_model_results.png?raw=true" alt="ml_model_results" title="Vendas por dia nas próximas 6 semanas" align="center" height="380" class="center"/>
 
@@ -112,6 +112,6 @@ Além disso, o projeto também viabiliou uma melhoria na gestão financeira da R
 O previsão de vendas implementada via bot do Telegram pode ser vista em funcionamento aqui: [Youtube](https://www.youtube.com/shorts/XsvRzYXMBL4)
 
 
-## 7 Referências
+## 8 Referências
 * O Dataset foi obtido no [Kaggle](https://www.kaggle.com/c/rossmann-store-sales)
 * A imagem utilizada é de uso livre e foi obtida no [Pexels](https://www.pexels.com/pt-br/foto/mulher-adulta-elegante-usando-smartphone-na-rua-3774903/)
