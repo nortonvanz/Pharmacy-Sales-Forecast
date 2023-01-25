@@ -16,9 +16,10 @@ O contexto de negócios é fictício, porém descreve um problema real de uma gr
 Em uma reunião mensal de resultados da Rossmann, o CFO solicitou aos gerentes das lojas a previsão de vendas (faturamento) para as próximas 6 semanas, pois ele precisa saber quanto cada loja pode contribuir financeiramente para uma reforma na rede, que está padronizando suas lojas.
 
 ## 2. Premissas de negócio
-- A consulta da previsão de vendas deve estar diponível 24/7, e será acessível via dispositivos móveis.
+- A consulta da previsão de vendas deve estar diponível 24/7, e deve ser acessível via dispositivos móveis.
 
 ## 3. Planejamento da solução
+
 ### 3.1. Produto final
 O que será entregue efetivamente?
 - Um bot (robô) no aplicativo de mensagens Telegram, que recebe o código da loja, e retorna em tempo real qual a sua previsão de vendas (faturamento) para as próximas 6 semanas.
@@ -79,7 +80,17 @@ Hipótese verdadeira. Na média anual, as lojas vendem menos em feriados escolar
 
 * Insight de negócio: Considerar um maior aproveitamento deste aumento de vendas nos feriados escolares de agosto, elaborando promoções focadas em clientes nas faixas etárias escolares.
 
-## 5. Resultados financeiros para o negócio
+## 5. Resultados do modelo de previsão de vendas
+
+O algoritmo escolhido para produção foi o XGBoost Regressor, tendo um erro absoluto médio (MAE) de €690 após o cross-validation.
+
+Desta forma, a cada predição para 6 semanas, o modelo erra em torno de €686 por dia (± 10%).
+
+Uma comparação entre vendas reais e vendas previsar pode ser vista abaixo:
+
+<img src="https://github.com/nortonvanz/Pharmacy-Sales-Forecast/blob/main/img/ml_model_results.png?raw=true" alt="ml_model_results" title="Vendas por dia nas próximas 6 semanas" align="center" height="380" class="center"/>
+
+## 6. Resultados financeiros para o negócio
 As previsões de vendas da Rossmann, eram até antes deste projeto realizadas por meio de planilhas de histórico de venda, através de uma média móvel.
 A taxa de erros desta previsão de vendas de toda a rede ficava na média de 36%, chegando a até 60% nas lojas mais recentes.
 
@@ -93,18 +104,14 @@ Após o projeto, a necessidade de emprestimo foi reavaliada em 55 milhões de eu
 Considerando as mesmas condições de emprestimo, serão gastos agora aprox. €3,3 milhões em juros, uma economia de aprox. €1,2 milhões em 3 anos.
 
 
-## 6. Conclusão
+## 7. Conclusão
 O objetivo do projeto foi alcançado, resolvendo o problema inicial de previsibilidade de faturamento enfrentado pelo CFO. 
 
 Além disso, o projeto também viabiliou uma melhoria na gestão financeira da Rossmann, através de uma melhor gestão de fluxo de caixa.
 
 O previsão de vendas implementada via bot do Telegram pode ser vista em funcionamento aqui: [Youtube](https://www.youtube.com/shorts/XsvRzYXMBL4)
 
-## 7. Próximos passos
-Melhorias mapeadas:
-* - Aumentar o a quantidade de combinações de features no random search.
-* - Implementar pipelines para preprocessing, ML e cross validation no projeto.
 
-## 8 Referências
+## 7 Referências
 * O Dataset foi obtido no [Kaggle](https://www.kaggle.com/c/rossmann-store-sales)
 * A imagem utilizada é de uso livre e foi obtida no [Pexels](https://www.pexels.com/pt-br/foto/mulher-adulta-elegante-usando-smartphone-na-rua-3774903/)
