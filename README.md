@@ -1,6 +1,5 @@
 # Pharmacy-Sales-Forecast
 
-
 <img src="https://github.com/nortonvanz/Pharmacy-Sales-Forecast/blob/main/img/rossmann_sales_prediction_img.jpg?raw=true" width=70% height=70%/>
 
 Projeto de Previsão de Vendas de uma rede de farmácias.
@@ -9,11 +8,11 @@ Contextualização:
 A Rossmann é uma das maiores redes de farmácias da Europa, possuindo mais de 4.000 lojas, e 56 mil colaboradores até 2020.
 
 Os dados utilizados neste projeto são reais, e foram disponibilizados pela própria Rossmanm através do site Kaggle, para uma competição de ciência de dados.
-Foram disponibilizados 1.017.209 registros de vendas, contendo 18 características de cada venda.
+Foram disponibilizados 1.017.209 registros de vendas, contendo 18 variáveis que detalham cada venda.
 
 O contexto de negócios é fictício, porém descreve um problema real de uma grande varejista: prever com assertividade suas vendas.
 
-## 1. Problema de negócios
+## 1. Problema de negócio
 Em uma reunião mensal de resultados da Rossmann, o CFO solicitou aos gerentes das lojas a previsão de vendas (faturamento) para as próximas 6 semanas, pois ele precisa saber quanto cada loja pode contribuir financeiramente para uma reforma na rede, que está padronizando suas lojas.
 
 ## 2. Premissas de negócio
@@ -23,6 +22,7 @@ Em uma reunião mensal de resultados da Rossmann, o CFO solicitou aos gerentes d
 ### 3.1. Produto final
 O que será entregue efetivamente?
 - Um bot (robô) no aplicativo de mensagens Telegram, que recebe o código da loja, e retorna em tempo real qual a sua previsão de vendas (faturamento) para as próximas 6 semanas.
+- Protótipo validado pelo time de negócio: [Google Sheets](https://docs.google.com/spreadsheets/d/1_LKT5vWN0KoR2cQtfOHN9g63l1wHrCk49pb_rP3i5XA/edit#gid=0)
 
 ### 3.2. Ferramentas
 Quais ferramentas serão usadas no processo?
@@ -31,7 +31,7 @@ Quais ferramentas serão usadas no processo?
 - Git e Github;
 - Heroku Cloud; 
 - Algoritmos de Regressão;
-- Pacotes de Machine Learning Sklearn e Scipy;
+- Bibliotecas de Machine Learning Sklearn;
 - Técnicas de Seleção de Features;
 - Flask e Python API's.
 
@@ -54,18 +54,28 @@ Durante a análise exploratória de dados, foram gerados insights ao time de neg
 
 Insights são informações novas, ou que contrapõe crenças até então estabelecidas do time de negócios. São também acionáveis: possibilitam ação para direcionar resultados futuros.
 
+A análise detalhada dos dados foi realizada através da ferramenta SweetViz, e pode ser encontrada na pasta "reports" deste projeto.
+
+Os 3 principais insights gerados foram:
+
 #### 1 Lojas com promoções ativas por mais tempo deveriam vender mais.
 Hipótese falsa. Foi observado que as vendas cairam em toda a rede em promoções extendidas ativas há mais de 220 semanas.
+
+<img src="https://github.com/nortonvanz/Pharmacy-Sales-Forecast/blob/main/img/hyp_4.png?raw=true" alt="h4" title="Vendas x Semanas com promo estendida" align="center" height="380" class="center"/>
 
 * Insight de negócio: Descontinuar as promoções extendidas ativas ao atingirem no máximo 220 semanas, mantendo apenas promoções pontuais, ou realizando novas campanhas promocionais.
 
 #### 2 Lojas deveriam vender mais no segundo semestre do ano.
 Hipótese falsa. Foi observado que com exceção do mês de julho, as vendas são aproximadamente 1/3 menores nos 5 últimos meses do ano. 
 
+<img src="https://github.com/nortonvanz/Pharmacy-Sales-Forecast/blob/main/img/hyp_9.png?raw=true" alt="h9" title="Vendas x Meses do Ano" align="center" height="380" class="center"/>
+
 * Insight de negócio: Considerar o declínio sazonal histórico de vendas entre os meses de agosto a dezembro, compensando este fenômeno como ações de marketing adicionais.  
 
 #### 3 Lojas deveriam vender menos durante os feriados escolares.
 Hipótese verdadeira. Na média anual, as lojas vendem menos em feriados escolares. Avaliando mensalmente, a exceção é o mês de agosto.
+
+<img src="https://github.com/nortonvanz/Pharmacy-Sales-Forecast/blob/main/img/hyp_12.png?raw=true" alt="h12" title="Vendas x Meses do Ano em Feriados" align="center" height="380" class="center"/>
 
 * Insight de negócio: Considerar um maior aproveitamento deste aumento de vendas nos feriados escolares de agosto, elaborando promoções focadas em clientes nas faixas etárias escolares.
 
