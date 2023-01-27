@@ -4,6 +4,7 @@
 *.gsheet
 *.DS_Store
 *.mov
+*.txt
 
 # Distribuition / packaging
 *.ipynb_checkpoints
